@@ -17,6 +17,13 @@ const gameState = {
 }
 
 const gameScreen = document.getElementById('gameScreen');
+const socket = io('http://localhost:8000', {transports: ['websocket']});
+socket.on('init', handleInit)
+
+function handleInit(msg) {
+    console.log(msg)
+}
+
 let canvas, ctx;
 
 
