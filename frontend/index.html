@@ -14,25 +14,52 @@
       crossorigin="anonymous"
     />
 
-    <!-- <style>
+    <style>
       #gameScreen {
         display: none;
       }
-    </style> -->
-  	</head>
-  	<body>
-		<section class="vh-100">
-			<div class="container h-100">
-				<div id="gameScreen" class="h-100">
-					<div class="d-flex flex-column align-items-center justify-content-center h-100">
-						<canvas id="canvas"></canvas>
-					</div>
-				</div>
-			</div>
-		</section>
+    </style>
+  </head>
+  <body>
+    <section class="vh-100">
+      <div class="container h-100">
+        <div id="initialScreen" class="h-100">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center h-100"
+          >
+            <h1>Multiplayer Snake</h1>
+            <button type="submit" class="btn btn-success" id="newGameButton">
+              Create New Game
+            </button>
+            <div>OR</div>
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="Enter Game Code"
+                id="gameCodeInput"
+              />
+            </div>
+            <button type="submit" class="btn btn-success" id="joinGameButton">
+              Join Game
+            </button>
+          </div>
+        </div>
+        <div id="gameScreen" class="h-100">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center h-100"
+          >
+            <canvas id="canvas"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script> -->
-    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
-		<script src="index.js"></script>
-  	</body>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script> -->
+    <script
+      src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+      integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
 </html>

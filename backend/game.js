@@ -1,9 +1,16 @@
 const { GRID_SIZE } = require('./constants.js')
 
 module.exports = {
-    createGameState,
+    // createGameState,
+    initGame,
     gameLoop,
     getUpdatedVelocity
+}
+
+function initGame() {
+    const state = createGameState()
+    randomFood()
+    return state;
 }
 
 function createGameState() {
